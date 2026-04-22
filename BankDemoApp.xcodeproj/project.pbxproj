@@ -6,6 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4B7CCE5E2F985C67008DD0F2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7CCE5D2F985C5F008DD0F2 /* User.swift */; };
+		4B7CCE602F985CD8008DD0F2 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7CCE5F2F985CA9008DD0F2 /* UserRepository.swift */; };
+		4B7CCE662F98643D008DD0F2 /* UserRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7CCE652F98643A008DD0F2 /* UserRepositoryImpl.swift */; };
+		4B7CCE712F987000008DD0F2 /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7CCE722F987000008DD0F2 /* UserDTO.swift */; };
+		4B7CCE692F98648E008DD0F2 /* FetchUsersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7CCE682F98648C008DD0F2 /* FetchUsersUseCase.swift */; };
+		4B7CCE6C2F9864AF008DD0F2 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7CCE6B2F9864AD008DD0F2 /* UserViewModel.swift */; };
+		4B7CCE6E2F9864C6008DD0F2 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7CCE6D2F9864C4008DD0F2 /* UserViewController.swift */; };
+		4B7CCE702F98695B008DD0F2 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7CCE6F2F986959008DD0F2 /* UserCellViewModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4B7CCE402F9859FC008DD0F2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +38,14 @@
 		4B7CCE292F9859F9008DD0F2 /* BankDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7CCE3F2F9859FC008DD0F2 /* BankDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7CCE492F9859FC008DD0F2 /* BankDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B7CCE5D2F985C5F008DD0F2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4B7CCE5F2F985CA9008DD0F2 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		4B7CCE652F98643A008DD0F2 /* UserRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryImpl.swift; sourceTree = "<group>"; };
+		4B7CCE722F987000008DD0F2 /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		4B7CCE682F98648C008DD0F2 /* FetchUsersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUsersUseCase.swift; sourceTree = "<group>"; };
+		4B7CCE6B2F9864AD008DD0F2 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		4B7CCE6D2F9864C4008DD0F2 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		4B7CCE6F2F986959008DD0F2 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -88,6 +107,9 @@
 		4B7CCE202F9859F9008DD0F2 = {
 			isa = PBXGroup;
 			children = (
+				4B7CCE6A2F9864A4008DD0F2 /* Presentation */,
+				4B7CCE672F986473008DD0F2 /* Domain */,
+				4B7CCE632F986405008DD0F2 /* Data */,
 				4B7CCE2B2F9859F9008DD0F2 /* BankDemoApp */,
 				4B7CCE422F9859FC008DD0F2 /* BankDemoAppTests */,
 				4B7CCE4C2F9859FC008DD0F2 /* BankDemoAppUITests */,
@@ -103,6 +125,35 @@
 				4B7CCE492F9859FC008DD0F2 /* BankDemoAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4B7CCE632F986405008DD0F2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4B7CCE722F987000008DD0F2 /* UserDTO.swift */,
+				4B7CCE652F98643A008DD0F2 /* UserRepositoryImpl.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4B7CCE672F986473008DD0F2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4B7CCE682F98648C008DD0F2 /* FetchUsersUseCase.swift */,
+				4B7CCE5F2F985CA9008DD0F2 /* UserRepository.swift */,
+				4B7CCE5D2F985C5F008DD0F2 /* User.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4B7CCE6A2F9864A4008DD0F2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4B7CCE6D2F9864C4008DD0F2 /* UserViewController.swift */,
+				4B7CCE6B2F9864AD008DD0F2 /* UserViewModel.swift */,
+				4B7CCE6F2F986959008DD0F2 /* UserCellViewModel.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7CCE692F98648E008DD0F2 /* FetchUsersUseCase.swift in Sources */,
+				4B7CCE702F98695B008DD0F2 /* UserCellViewModel.swift in Sources */,
+				4B7CCE6E2F9864C6008DD0F2 /* UserViewController.swift in Sources */,
+				4B7CCE6C2F9864AF008DD0F2 /* UserViewModel.swift in Sources */,
+				4B7CCE662F98643D008DD0F2 /* UserRepositoryImpl.swift in Sources */,
+				4B7CCE5E2F985C67008DD0F2 /* User.swift in Sources */,
+				4B7CCE712F987000008DD0F2 /* UserDTO.swift in Sources */,
+				4B7CCE602F985CD8008DD0F2 /* UserRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
